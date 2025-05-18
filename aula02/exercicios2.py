@@ -132,8 +132,51 @@ def VerificaFloat(n1, n2):
 
 # 11. String convert to UPPERCASE
 
-palavra = input("Digite aqui sua string: ")
+# palavra = input("Digite aqui sua string: ")
 
-palavra = palavra.upper()
+# palavra = palavra.upper()
 
-print(palavra)
+# print(palavra)
+
+# 12. Recebe o nome completo do user e retorna todo lowercase()
+
+# nome_user = input("Digite o seu nome completo: ")
+
+# nome_user_lower = nome_user.lower()
+
+# print(nome_user_lower)
+
+# 13. Recebe uma frase e aplica um trim/clean
+
+# frase = input("Digite uma frase com espaços no começo e no fim:")
+
+# frase_trim_clean = frase.strip()
+
+# print(f"Essa é a frase com espaços {frase}!")
+# print(f"Essa é a frase sem espaços {frase_trim_clean}!")
+
+# 14. Recebe string no formato dd/mm/aaa e retorna separadamente o dia, o mês e o ano
+
+# interesse = ["Dia", "Mês", "Ano"]
+
+# data = input("Digite a data no formato dd/mm/aaaa: ")
+
+# elementos = data.split("/")
+
+
+# completo = dict(zip(interesse, elementos))
+
+
+# for chave, valor in (completo.items()):
+
+#     print(f"{chave}: {valor}")
+
+# 15. Concatenar duas strings 
+
+# string1 = input("String 1: ")
+# string2 = input("String 2: ")
+
+# string3 = string1+string2
+
+# print(string3)
+
