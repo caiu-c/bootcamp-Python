@@ -180,3 +180,38 @@ def VerificaFloat(n1, n2):
 
 # print(string3)
 
+verdade = ['verdade', 'v', 'verdadeiro', 'sim', 's', 'si', 'sí','true', '1', 't', 'y', 'yes', 'yeah', 'yup', 'certainly', 'uh-huh']
+# 16. AND
+bln1 = (input("Digite uma empressao booleana: "))
+bln2 = (input("Digite uma empressao booleana: "))
+
+bln1 = bln1.lower() in verdade
+bln2 = bln2.lower() in verdade
+
+result_and = (bln1 and bln2)
+print(f"O resultado da operação AND entre {bln1} e {bln2} é {result_and}")
+
+# 17. OR
+result_or = bln1 or bln2
+print(f"O resultado da operação OR entre {bln1} e {bln2} é {result_or}")
+# 18. NOT
+invert_first = not(bln1)
+print(f'A inversão de {bln1} é {invert_first}')
+
+# 19. TWO equal numbers
+n18 = input('Digite o 1° n°: ')
+n19 = input('Digite o 2° n°: ')
+
+n18, n19 = VerificaFloat(n18, n19)
+
+iguais_ = n18 == n19
+
+if iguais_:
+    print(f'O n° {n18} é igual ao n° {n19}! ')
+    print(iguais_)
+# 20. Diff
+else:
+    print(f'O n° {n18} é diferente do {n19} :( ')
+    print(iguais_)
+
+
