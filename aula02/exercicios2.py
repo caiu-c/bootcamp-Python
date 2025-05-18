@@ -340,7 +340,7 @@ def verifica_float(n):
      try:
          return float(n)
      except ValueError:
-         raise ValueError(f"Número inválido. {n} não é um número! ")
+         raise ValueError(f"Número inválido. '{n}' não é um número! ")
     
 def classificador(n):
     if n == 0:
@@ -391,7 +391,7 @@ def impar_par(n):
 def verifica_separador(mensagem):
 
     l_input = mensagem.split(',')
-    if len(l_input) <= 1:
+    if len(l_input) < 2:
         raise SyntaxError("Nenhum separador ',' foi encontrado")
     else:
         return (l_input)
@@ -410,9 +410,11 @@ def obter_entrada2(mensagem, verifica_separador):
             return numeros
         
         except ValueError as e:
-            print(f"erro: {e}. Tente novamente! ")
+            print(f"erro: {e} Tente novamente! ")
         except SyntaxError as e2:
-            print(f"Erro: {e2}. Tente novamente! ")
+            print(f"Erro: {e2} Tente novamente! ")
+
+
 if __name__ == "__main__":
     valores = obter_entrada2(
         "Digite números separados por vírgula (ex: 3, 5.2): ",
