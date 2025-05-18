@@ -132,8 +132,86 @@ def VerificaFloat(n1, n2):
 
 # 11. String convert to UPPERCASE
 
-palavra = input("Digite aqui sua string: ")
+# palavra = input("Digite aqui sua string: ")
 
-palavra = palavra.upper()
+# palavra = palavra.upper()
 
-print(palavra)
+# print(palavra)
+
+# 12. Recebe o nome completo do user e retorna todo lowercase()
+
+# nome_user = input("Digite o seu nome completo: ")
+
+# nome_user_lower = nome_user.lower()
+
+# print(nome_user_lower)
+
+# 13. Recebe uma frase e aplica um trim/clean
+
+# frase = input("Digite uma frase com espaços no começo e no fim:")
+
+# frase_trim_clean = frase.strip()
+
+# print(f"Essa é a frase com espaços {frase}!")
+# print(f"Essa é a frase sem espaços {frase_trim_clean}!")
+
+# 14. Recebe string no formato dd/mm/aaa e retorna separadamente o dia, o mês e o ano
+
+# interesse = ["Dia", "Mês", "Ano"]
+
+# data = input("Digite a data no formato dd/mm/aaaa: ")
+
+# elementos = data.split("/")
+
+
+# completo = dict(zip(interesse, elementos))
+
+
+# for chave, valor in (completo.items()):
+
+#     print(f"{chave}: {valor}")
+
+# 15. Concatenar duas strings 
+
+# string1 = input("String 1: ")
+# string2 = input("String 2: ")
+
+# string3 = string1+string2
+
+# print(string3)
+
+verdade = ['verdade', 'v', 'verdadeiro', 'sim', 's', 'si', 'sí','true', '1', 't', 'y', 'yes', 'yeah', 'yup', 'certainly', 'uh-huh']
+# 16. AND
+bln1 = (input("Digite uma empressao booleana: "))
+bln2 = (input("Digite uma empressao booleana: "))
+
+bln1 = bln1.lower() in verdade
+bln2 = bln2.lower() in verdade
+
+result_and = (bln1 and bln2)
+print(f"O resultado da operação AND entre {bln1} e {bln2} é {result_and}")
+
+# 17. OR
+result_or = bln1 or bln2
+print(f"O resultado da operação OR entre {bln1} e {bln2} é {result_or}")
+# 18. NOT
+invert_first = not(bln1)
+print(f'A inversão de {bln1} é {invert_first}')
+
+# 19. TWO equal numbers
+n18 = input('Digite o 1° n°: ')
+n19 = input('Digite o 2° n°: ')
+
+n18, n19 = VerificaFloat(n18, n19)
+
+iguais_ = n18 == n19
+
+if iguais_:
+    print(f'O n° {n18} é igual ao n° {n19}! ')
+    print(iguais_)
+# 20. Diff
+else:
+    print(f'O n° {n18} é diferente do {n19} :( ')
+    print(iguais_)
+
+
